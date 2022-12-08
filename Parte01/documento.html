@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>JS HTML DOM BÁSICO - DOCUMENTO</title>
+        <!-- GOOGLE FONT -->
+    <link href="ttps://fonts.googleapis.com/css?family=Titillium+Webh" rel="stylesheet" />
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-lg fixed-top color1">
+      <a class="navbar-brand" href="#">JS HTML DOM BÁSICO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link color2" href="#id">BUSQUEDA</a>
+          <a class="nav-item nav-link color2" href="#etiqueta">MODIFICAR</a>
+          <a class="nav-item nav-link color2" href="#clase">ADICION Y ELIMINACION</a>
+          <a class="nav-item nav-link color2" href="#css">CONTROLADORES</a>
+          <a class="nav-item nav-link color2" href="#html">BUSQUEDA OBJETOS</a>
+          <a class="nav-item nav-link color2" href="./HomePage.html">VOLVER</a>
+        </div>
+      </div>
+    </nav>
+
+
+        <section class="testimonial" id="intro">
+      <div class="container">
+        <p class="h4 mb-2">DOCUMENTO JS HTML DOM</p>
+      </div>
+    </section>
+        <!-- About section-->
+        <section id="about"><br><br>
+            <div class="container px-4">
+                <img class="card-img-top" src="https://iddocente.com/wp-content/uploads/2020/11/idd_tic_escuela_ok.jpg" alt="..." />
+                <br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+                        <p class="lead">El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.</p>
+                         <p>El objeto del documento representa su página web.</p><p>Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento.</p><p>A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<section class="testimonial" id="id">
+      <div class="container">
+        <p class="h4 mb-2">Encontrar elementos HTML</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100"><br><br>
+        <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Método</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>document.getElementById(id)</td>
+                    <td>Encuentra un elemento por id de elemento</td>
+                </tr>
+                <tr class="">
+                    <td>document.getElementsByTagName(name)</td>
+                    <td>Buscar elementos por nombre de etiqueta</td>
+                </tr>
+                <tr class="">
+                    <td>document.getElementsByClassName(name)</td>
+                    <td>Buscar elementos por nombre de clase</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+   </div>
+   </div>
+    </div>
+</section>
+
+<section class="testimonial" id="etiqueta">
+      <div class="container">
+        <p class="h4 mb-2">Cambio de elementos HTML</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100">
+                      <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Propiedad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>element.innerHTML =  new html content</td>
+                    <td>Cambiar el HTML interno de un elemento</td>
+                </tr>
+                <tr class="">
+                    <td>element.attribute = new value</td>
+                    <td>Cambiar el valor del atributo de un elemento HTML</td>
+                </tr>
+                <tr class="">
+                    <td>element.style.property = new style</td>
+                    <td>Cambiar el estilo de un elemento HTML</td>
+                </tr>
+            </tbody>
+        </table>
+        </div> </div></div>
+            </div>
+
+        <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100">
+                      <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Método</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>element.setAttribute(attribute, value)</td>
+                    <td>Cambiar el valor del atributo de un elemento HTML</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div> </div></div>
+            </div>
+        </section>
+
+        <section class="testimonial" id="clase">
+      <div class="container">
+        <p class="h4 mb-2">Adición y eliminación de elementos</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100">
+                        <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Método</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>document.createElement(element)</td>
+                    <td>Crear un elemento HTML</td>
+                </tr>
+                <tr >
+                    <td>document.removeChild(element)</td>
+                    <td>Eliminar un elemento HTML</td>
+                </tr>
+                <tr >
+                    <td>document.appendChild(element)</td>
+                    <td>Agregar un elemento HTMLe</td>
+                </tr>
+                <tr >
+                    <td>document.replaceChild(new, old)</td>
+                    <td>Remplazar un elemento HTML</td>
+                </tr>
+                 <tr >
+                    <td>document.write(text)</td>
+                    <td>Escribir en el flujo de salida HTML</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial" id="css">
+      <div class="container">
+        <p class="h4 mb-2">Adición de controladores de eventos</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100">
+
+                        <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Método</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>document.getElementById(id).onclick = function(){code}</td>
+                    <td>Agregar código de controlador de eventos a un evento onclick</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="testimonial" id="html">
+      <div class="container">
+        <p class="h4 mb-2">Encontrar objetos HTML</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12 card h-100">
+                        <p class="lead">El primer HTML DOM Nivel 1 (1998), definió 11 objetos HTML, colecciones de objetos y propiedades. Estos siguen siendo válidos en HTML5. Más tarde, en HTML DOM Nivel 3, se agregaron más objetos, colecciones y propiedades.</p><br><br>
+                         
+                         <div class="table">
+            <table class="table table-striped table-condensed table-bordered aspecto">
+            <thead>
+                <tr class="">
+                    <th>Propiedad</th>
+                    <th>Descripción</th>
+                    <th>DOM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>document.anchors</td>
+                    <td>Devuelve todos los elementos <a> que tienen un atributo de nombre</td>
+                    <td>1</td>
+                </tr>
+                <tr >
+                    <td>document.baseURI</td>
+                    <td>Devuelve el URI base absoluto del documento.</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.body</td>
+                    <td>Devuelve el elemento body</td>
+                    <td>1</td>
+                </tr>
+                 <tr >
+                    <td>document.cookie</td>
+                    <td>Devuelve el tipo de documento del cookie.</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>document.doctype</td>
+                    <td>Devuelve el tipo de documento del documento.</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.documentElement</td>
+                    <td>Devuelve el elemento <html></td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.documentMode</td>
+                    <td>Returns the mode used by the browser/td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.documentURI</td>
+                    <td>Devuelve la URI del documento</td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td>document.embeds</td>
+                    <td>Devuelve todos los elementos embed</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.forms</td>
+                    <td>Devuelve todos los elementos form</td>
+                    <td>1</td>
+                </tr>
+                <tr >
+                    <td>document.head</td>
+                    <td>Devuelve todos los elementos head</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.images</td>
+                    <td>Devuelve todos los elementos img</td>
+                    <td>1</td>
+                </tr>
+                 <tr >
+                    <td>document.implementation</td>
+                    <td>Devuelve la implementación DOM</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>document.inputEncoding</td>
+                    <td>Devuelve la codificación del documento (conjunto de caracteres)L</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.lastModified</td>
+                    <td>Devuelve la fecha y hora en que se actualizó el documento.</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.readyState</td>
+                    <td>Devuelve el estado (de carga) del documento</td>
+                    <td>3</td>
+                </tr>
+                <tr >
+                    <td>document.scripts</td>
+                    <td>Devuelve todos los elementos script</td>
+                    <td>3</td>
+                </tr>
+                 <tr >
+                    <td>document.strictErrorChecking</td>
+                    <td>Devuelve si se aplica la comprobación de errores</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div> 
+                    </div>
+                </div><br><br>
+            </div>
+        </section>
+
+        <!-- Footer-->
+       <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h2 class="text-uppercase mb-4">GRUPO #08</h2>
+          <p>INTEGRANTES</p>
+          <p> Naula Anahi, Ramirez Dayana. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Daya.jpeg" style="width: 30%;">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Anahi.jpg" style="width: 50%;">
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>

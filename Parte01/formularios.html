@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Formularios JavaScript</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="ttps://fonts.googleapis.com/css?family=Titillium+Webh" rel="stylesheet" />
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top color1">
+      <a class="navbar-brand" href="#">JS HTML DOM BÁSICO</a>
+      <button id="btntg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link color2" href="#ejem">EJEMPLOS</a>
+          <a class="nav-item nav-link color2" href="./HomePage.html">VOLVER</a>
+        </div>
+      </div>
+    </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Formularios JavaScript</h1>
+                            <p class="lead text-white-50 mb-4">Los formularios y sus controles, son objetos DOM que tienen propiedades únicas, que otros objetos no poseen. Por ejemplo, un formulario tiene una propiedad action, que le indica al navegador dónde tiene que enviar las entradas del usuario, cuando se envía el formulario.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Empezar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+            <h4 class="text-center">Eventos más utilizados en el manejo de los formularios son los siguientes:</h4>
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="card-img-top mb-5 mb-md-0" src="img/Img14.jpg" alt="..." />
+                        <h2 class="h4 fw-bolder text-center">Onclick</h2>
+                        <p>Evento que se produce cuando se pincha con el ratón sobre un elemento. Normalmente se utiliza con cualquiera de los tipos de botones que permite definir XHTML.</p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="card-img-top mb-5 mb-md-0" src="img/Img15.png" alt="..." />
+                        <h2 class="h4 fw-bolder text-center">Onchange</h2>
+                        <p>Evento que se produce cuando el usuario cambia el valor de un elemento de texto. También se produce cuando el usuario selecciona una opción en una lista desplegable. Sin embargo, el evento sólo se produce si después de realizar el cambio, el usuario pasa al siguiente campo del formulario, lo que técnicamente se conoce como que "el otro campo de formulario ha perdido el foco".</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="card-img-top mb-5 mb-md-0" src="img/Img16.jpg" alt="..." />
+                        <h2 class="h4 fw-bolder text-center">Onblur</h2>
+                        <p>Evento complementario de onfocus, ya que se produce cuando el usuario ha deseleccionado un elemento por haber seleccionado otro elemento del formulario. Técnicamente, se dice que el elemento anterior "ha perdido el foco".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing section-->
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder" id="ejem">Ejemplos</h2>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Pricing card free-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-center"><h4>Validación de formulario JavaScript</h4></div>
+                                <img class="card-img-top mb-5 mb-md-0" src="img/Img17.png" alt="..." />
+                                <p>La validación de formularios HTML se puede realizar mediante JavaScript.
+                                Si un campo de formulario (fname) está vacío, esta función alerta con un mensaje y devuelve falso para evitar que se envíe el formulario.
+                                La función se puede llamar cuando se envía el formulario.</p>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card pro-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-center"><h4>Validación automática de formularios HTML</h4></div>
+                                <img class="card-img-top mb-5 mb-md-0" src="img/Img18.jpg" alt="..." />
+                                <p>El navegador puede realizar automáticamente la validación del formulario HTML.
+                                Si un campo de formulario (fname) está vacío, el requiredatributo impide que se envíe este formulario. Hay que tener en cuenta que la validación automática de formularios HTML no funciona en Internet Explorer 9 o anterior.</p>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_html" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card enterprise-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-center"><h4>Atributos de entrada HTML de validación de restricciones</h4></div>
+                                <img class="card-img-top mb-5 mb-md-0" src="img/Img19.jpg" alt="..." />
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Disabled:</strong> 
+                                        Specifies that the input element should be disabled
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Max:</strong>
+                                        Specifies the maximum value of an input element
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Min:</strong>
+                                        Specifies the minimum value of an input element
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Pattern:</strong>
+                                        Specifies the value pattern of an input element
+                                    </li>
+                                </ul>
+                                <p>Para obtener una lista completa, vaya a:</p>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://www.w3schools.com/html/html_form_attributes.asp" target="_blank">Ingresar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h2 class="text-uppercase mb-4">GRUPO #08</h2>
+          <p>INTEGRANTES</p>
+          <p> Naula Anahi, Ramirez Dayana. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Daya.jpeg" style="width: 30%;">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Anahi.jpg" style="width: 50%;">
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>JS HTML DOM BÁSICO - ELEMENTOS</title>
+        <!-- GOOGLE FONT -->
+    <link href="ttps://fonts.googleapis.com/css?family=Titillium+Webh" rel="stylesheet" />
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-lg fixed-top color1">
+      <a class="navbar-brand" href="#">JS HTML DOM BÁSICO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link color2" href="#id">ID</a>
+          <a class="nav-item nav-link color2" href="#etiqueta">ETIQUETA</a>
+          <a class="nav-item nav-link color2" href="#clase">CLASE</a>
+          <a class="nav-item nav-link color2" href="#css">SELECTORES CSS</a>
+          <a class="nav-item nav-link color2" href="#html">OBJETOS HTML</a>
+          <a class="nav-item nav-link color2" href="./HomePage.html">VOLVER</a>
+        </div>
+      </div>
+    </nav>
+
+
+        <section class="testimonial" id="intro">
+      <div class="container">
+        <p class="h4 mb-2">ELEMENTOS JS HTML DOM</p>
+      </div>
+    </section>
+        <!-- About section-->
+        <section id="about"><br><br>
+            <div class="container px-4">
+                <img class="card-img-top" src="https://asicamericas.com/wp-content/uploads/2020/08/39.-Evolucio%CC%81n_Educacio%CC%81n_uso_de_las_TICs.jpg" alt="..." />
+                <br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+                        <p class="lead">A menudo, con JavaScript, desea manipular elementos HTML. Para hacerlo, primero tienes que encontrar los elementos. Hay varias maneras de hacer esto:</p>
+                         <p>Encontrar elementos HTML por ID,nombre de etiqueta, nombre de clase, mediante selectores CSS y por colecciones de objetos HTML:</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<section class="testimonial" id="id">
+      <div class="container">
+        <p class="h4 mb-2">POR ID</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+                        <p class="lead">La forma más fácil de encontrar un elemento HTML en el DOM es utilizando la identificación del elemento.</p>
+
+                        <p>Este ejemplo encuentra el elemento con id="intro":</p><br><br>
+                         <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="_blank">Intentalo..</a></div>
+                        <br><br><p>Si se encuentra el elemento, el método devolverá el elemento como un objeto (en el elemento). Si no se encuentra el elemento, el elemento contendrá null.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="testimonial" id="etiqueta">
+      <div class="container">
+        <p class="h4 mb-2">POR NOMBRE DE ETIQUETA</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+
+                        <p>Este ejemplo encuentra todos los p elementos:</p><br><br>
+                         <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="_blank">Intentalo..</a></div><br><br>
+
+                        <p>Este ejemplo encuentra el elemento con id="main"y luego encuentra todos los <p>elementos dentro "main":</p><br><br>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="_blank">Intentalo..</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial" id="clase">
+      <div class="container">
+        <p class="h4 mb-2">POR NOMBRE DE CLASE</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+
+                        <p class="lead">Si desea encontrar todos los elementos HTML con el mismo nombre de clase, use getElementsByClassName().</p>
+                        <p>Este ejemplo devuelve una lista de todos los elementos con class="intro".</p><br><br>
+                         <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="_blank">Intentalo..</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial" id="css">
+      <div class="container">
+        <p class="h4 mb-2">MEDIANTE SELECTORES DE CSS</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+
+                        <p class="lead">Si desea encontrar todos los elementos HTML que coincidan con un selector CSS específico (id, nombres de clase, tipos, atributos, valores de atributos, etc.), use el querySelectorAll()método.</p>
+                        <p> Este ejemplo devuelve una lista de todos los p elementos con class="intro".</p><br><br>
+                         <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall" target="_blank">Intentalo..</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="testimonial" id="html">
+      <div class="container">
+        <p class="h4 mb-2">POR COLECCIONES DE OBJETOS DE HTML</p>
+      </div>
+    </section>
+
+        <section>
+            <div class="container px-4"><br><br>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 card h-100">
+
+                        <p class="lead">Este ejemplo encuentra el elemento de formulario con id="frm1", en la colección de formularios, y muestra todos los valores de los elementos:</p><br><br>
+                         <div class="text-center"><a class="btn btn-outline-dark mt-auto color4" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" target="_blank">Intentalo..</a></div>
+                    </div>
+                </div><br><br>
+            </div>
+        </section>
+
+        <!-- Footer-->
+       <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h2 class="text-uppercase mb-4">GRUPO #08</h2>
+          <p>INTEGRANTES</p>
+          <p> Naula Anahi, Ramirez Dayana. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Daya.jpeg" style="width: 30%;">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Anahi.jpg" style="width: 50%;">
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>
