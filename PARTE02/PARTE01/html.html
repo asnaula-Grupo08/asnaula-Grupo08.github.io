@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DOM HTML</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="ttps://fonts.googleapis.com/css?family=Titillium+Webh" rel="stylesheet" />
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg fixed-top color1">
+      <a class="navbar-brand" href="#">JS HTML DOM BÁSICO</a>
+      <button id="btntg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link color2" href="#intro">CONTENIDO HTML</a>
+          <a class="nav-item nav-link color2" href="#intro2">VALOR ATRIBUTO</a>
+          <a class="nav-item nav-link color2" href="#intro3">EJEMPLOS</a>
+          <a class="nav-item nav-link color2" href="./HomePage.html">VOLVER</a>
+        </div>
+      </div>
+    </nav>
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/Img3.jpg" alt="..." /></div>
+                    <div class="col-md-6" id="intro">
+                        <h1 class="display-5 fw-bolder text-center">Cambio de contenido HTML</h1>
+                        <div class="fs-5 mb-5">
+                            <span>La forma más sencilla de modificar el contenido de un elemento HTML es mediante la innerHTML propiedad.</span>
+                        </div>
+                        <p class="lead">Para cambiar el contenido de un elemento HTML, utilice esta sintaxis:</p>
+                        <div class="d-flex">
+                        <h6>document.getElementById(id).innerHTML = new HTML</h6>
+                        </div>
+                        <h1 class="display-5 fw-bolder text-center" id="intro2">Cambiar el valor de un atributo</h1>
+                        <p class="lead">Para cambiar el valor de un atributo HTML, utilice esta sintaxis:</p>
+                        <div class="d-flex">
+                        <h6>document.getElementById(id).attribute = new value</h6>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h1 class="fw-bolder mb-4 text-center" id="intro3">Ejemplos</h1>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="img/Img4.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Este ejemplo cambia el contenido de un "p" elemento:</h5>
+                                    <!-- Product price-->
+                                    <li>El documento HTML anterior contiene un <p> elemento conid="p1"</li>
+                                    <li>Usamos el HTML DOM para obtener el elemento conid="p1"</li>
+                                    <li>Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "¡Texto nuevo!"</li>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="img/Img5.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Este ejemplo cambia el contenido de un "h1" elemento:</h5>
+                                    <li>El documento HTML anterior contiene un "h1" elemento conid="id01"</li>
+                                    <li>Usamos el HTML DOM para obtener el elemento conid="id01"</li>
+                                    <li>Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "Nuevo encabezado"</li>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="img/Img6.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Este ejemplo cambia el valor del atributo src de un "img" elemento:</h5>
+                                    <li>El documento HTML anterior contiene un "img" elemento conid="myImage"</li>
+                                    <li>Usamos el HTML DOM para obtener el elemento conid="myImage"</li>
+                                    <li>Un JavaScript cambia el srcatributo de ese elemento de "smiley.gif" a "landscape.jpg"</li>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="img/Img7.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Documento.escribir()</h5>
+                                    <li>En JavaScript, document.write()se puede usar para escribir directamente en el flujo de salida HTML</li>
+                                    <li>Nunca lo use document.write()después de cargar el documento. Sobrescribirá el documento.</li>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_write" target="_blank">Intentalo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h2 class="text-uppercase mb-4">GRUPO #08</h2>
+          <p>INTEGRANTES</p>
+          <p> Naula Anahi, Ramirez Dayana. </p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Daya.jpeg" style="width: 30%;">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <img class="img-responsive img-circle" src="./img/Anahi.jpg" style="width: 50%;">
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
