@@ -5,7 +5,11 @@ body, html {
 }
 
 body {
+<<<<<<< HEAD
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("https://www.webjrcode.com/wp-content/uploads/2021/01/herramientas-para-desarrollo-web.jpg");
+=======
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_xbHHUSWctAmu9HZH8ZpfOt7cAYyN254dpkj1i5JZwQO5KrI-");
+>>>>>>> 1102941657d23a534ed5cce8eade3b468415bfca
     background-size: cover;
     background-position: center;
     color: #fff;
