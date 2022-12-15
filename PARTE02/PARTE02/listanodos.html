@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JS HTML DOM AVANZADO - LISTA DE NODOS DOM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>JS HTML DOM AVANZADO</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="HomePage.html">Inicio</a></li>
+          <li><a href="#lis">Listas</a></li>
+          <li><a href="#ap" class="active">Aprende</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>LISTA DE NODOS DOM</h2>
+              <p>Las listas de nodos son uno de los elementos tipo array más utilizados cuando realizamos aplicaciones que implican un trabajo con el DOM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a>Home</a></li>
+            <li>Lista De Nodos Dom</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=zBmtmlB5b5g" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <center><h3 id="lis">Listas de nodos JavaScript HTML DOM</h3></center>
+            <center><p>
+              Veámos qué son exactamente las listas de nodos y cómo podemos manejarlas de una forma cómoda y sin equívocos.
+            </p></center>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>NodeLists</h5>
+                  <p>Un aspecto importante a tener en cuenta es que, como cuaquier otro método que interactúa con el DOM, las listas de nodos no pertenecen a la especificación Javascript, sino a la API que los navegadores proporcionan para que Javascript interactúe con el modelo de objetos en el documento.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>NodeLists y Arrays</h5>
+                  <p>Una lista de nodos es una colección ordenada de elementos. Esto recuerda de forma directa al concepto de arrays; de hecho las similitudes son muchas.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team pt-0">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <span>APRENDE CONMIGO</span>
+          <h2 id="ap">APRENDE CONMIGO</h2>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>El objeto HTML DOM NodeList</h4>
+                <p>
+                  Un NodeListobjeto es una lista (colección) de nodos extraídos de un documento.
+                  Un NodeListobjeto es casi lo mismo que un HTMLCollectionobjeto.Todos los navegadores devuelven un objeto NodeList para la propiedad "childNodes". 
+                  La mayoría de los navegadores devuelven un objeto NodeList para el método "querySelectorAll()".
+                </p>
+                <div class="text-center"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist" class="buy-btn" target="_blank">Inténtalo tú mismo</a></div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Longitud de la lista de nodos HTML DOM</h4>
+                <p>
+                  La lengthpropiedad define el número de nodos en una lista de nodos.
+                  Además, lengthpropiedad es útil cuando desea recorrer los nodos en una lista de nodos.
+                </p>
+                <div class="text-center"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_loop" class="buy-btn" target="_blank">Inténtalo tú mismo</a></div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>NodeList</h4>
+                <p>
+                  Los métodos getElementsByClassName()y getElementsByTagName() devuelven una HTMLCollection activa. El querySelectorAll()método devuelve una lista de nodos estática. La childNodespropiedad devuelve una lista de nodos activa.
+                </p>
+                <div class="text-center"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nodelist_length" class="buy-btn" target="_blank">Inténtalo tú mismo</a></div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>GRUPO 8</span>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Integrantes</h4>
+          <ul>
+            <li>Anahi Sariah Naula Ruales</li>
+            <li>Dayana Aracely Ramirez Morocho</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
