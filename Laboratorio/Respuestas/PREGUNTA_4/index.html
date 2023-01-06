@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pregunta 4</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+      #background{position:absolute; width:99%; height:130%;}
+      #fixed {position:absolute; top: 0px; left: 0px;}
+
+      table,th,td {
+      border : 1px solid black;
+      border-collapse: collapse;
+      }
+      th,td {
+      padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img id="background" src="../../Imagenes/fondo.jpg"/> 
+    </div>
+    <div id="fixed" style="padding-left:30%; padding-top: 10%;">	
+      <br>	
+      <img src="../../Imagenes/selloespe.jpg" width="65%" align="center">
+      <h1 style="padding-left:25%;">Pregunta 4</h1>
+      <p>4. Mostrar datos XML en una tabla utilizando AJAX.</p>
+      <div class="section" id="enunciado" style="padding-left:25%;margin-top: 5%;" >
+      <button style="align-self: center;" type="button" onclick="loadDoc()">Obtener tabla</button>
+      </div>
+      <div class="section" id="resolucion" style="margin-top: 5%;">
+      </div>
+      <div class="section" style="margin-top: 5%;">
+      </div>
+      <table id="demo"></table>
+      <br>
+      <button onclick="window.location.href='../../index.html'">Menu principal</button>
+    </div>
+
+<script>
+  function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction(this);
+  }
+  xhttp.open("GET", "ventas.xml");
+  xhttp.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const a = xmlDoc.getElementsByTagName("PRODUCTO");
+  let table="<tr><th>Numero</th><th>Nombre</th><th>Precio</th></tr>";
+  for (let i = 0; i <a.length; i++) { 
+    table += "<tr><td>" +
+    a[i].getElementsByTagName("NUMERO")[0].childNodes[0].nodeValue + "</td><td>" + a[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</td><td>" + a[i].getElementsByTagName("PRECIOT")[0].childNodes[0].nodeValue + "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+  
+</script>
+
+</body>
+</html>
